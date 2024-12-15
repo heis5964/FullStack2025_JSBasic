@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Show and Hide</title>
+    <script>
+        //ตัวอย่างการเขียนโค๊ดภาภา JavaScript
+        function show() {
+            document.getElementById('panel').style.display = 'inline';
+        }
+        function hide() {
+            document.getElementById('panel').style.display = 'none';
+        }
+        function changeText() {
+            document.getElementById('h1').innerText = 'Tanes';
+        }
+        function changeBg() {
+            document.getElementById('h1').style.backgroundColor = 'red';
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">show</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeBg()">Change Bg</button>
+    <div id='panel'>
+        <h1 id="h1">Hello World by Tanes</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+        <h4>Hello</h4>
+        <h5>Hello</h5>
+        <h6>Hello</h6>
+    </div>
+</body>
+</html>
